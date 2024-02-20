@@ -71,16 +71,3 @@ nav {
 .rect>li:hover .liste {
     transform: scale(1);
 }
-
-.cadreJosuke {
-    width: 416px;
-    height: 659px;
-    border: 3px solid rgb(255, 76, 178);
-    margin-left: 300px;
-    padding: 15px 10px;
-}
-
-img {
-    width: auto;
-    height: auto;
-}
