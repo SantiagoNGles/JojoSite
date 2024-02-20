@@ -21,7 +21,7 @@ nav {
   display: inline-block;
   margin-top: 5px;
   border: 2px solid rgb(190, 190, 190);
-  margin-right: 100px;
+  margin: auto;
 }
 
 .rect li {

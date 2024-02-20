@@ -21,7 +21,7 @@ nav {
     display: inline-block;
     margin-top: 5px;
     border: 2px solid rgb(190, 190, 190);
-    margin-right: 100px;
+    margin: auto;
 }
 
 .rect li {
@@ -70,4 +70,18 @@ nav {
 
 .rect>li:hover .liste {
     transform: scale(1);
+}
+
+.cadreJosuke {
+    width: 400px;
+    height: 600px;
+    border: 2px solid rgb(255, 76, 178);
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 0px 0px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }
