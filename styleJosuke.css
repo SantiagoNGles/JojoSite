@@ -9,12 +9,26 @@ body {
     background-color: rgb(58, 58, 58);
 }
 
+h3 a {
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 2210px;
+    font-size: small;
+    border: 1px solid white;
+    display: flex;
+}
+
+h3 a:hover {
+    color: rgb(255, 76, 178);
+    border-color: rgb(255, 76, 178);
+}
+
 nav {
     text-align: center;
     padding-top: 8px;
     font-weight: bold;
     background-color: #000;
-    height: 75px;
+    height: 140px;
 }
 
 .rect {
@@ -85,17 +99,19 @@ img {
 
 div.affichage {
     display: flex;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 300px;
 }
 
 .txtJosuke {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: 300px;
+    margin-right: 100px;
     font-weight: bold;
     color: rgb(255, 76, 178);
     flex: 1;
-    font-size: 35px;
+    font-size: 20px;
+    line-height: 2em;
 }
 
 .txtJosuke a {
