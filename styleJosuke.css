@@ -72,16 +72,32 @@ nav {
     transform: scale(1);
 }
 
-.cadreJosuke {
-    width: 400px;
-    height: 600px;
-    border: 2px solid rgb(255, 76, 178);
-    margin-top: 20px;
-    margin-left: 50px;
-    padding: 0px 0px;
+.imgJosuke {
+    width: 650px;
+    height: 900px;
+    filter: drop-shadow(0px 0px 50px rgb(255, 249, 76));
 }
 
 img {
-    width: 100%;
-    height: 100%;
+    width: 650px;
+    height: 900px;
+}
+
+div.affichage {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.txtJosuke {
+    margin-top: 300px;
+    margin-left: 300px;
+    font-weight: bold;
+    color: rgb(255, 76, 178);
+    flex: 1;
+    font-size: 35px;
+}
+
+.txtJosuke a {
+    color: rgb(255, 249, 76);
 }
