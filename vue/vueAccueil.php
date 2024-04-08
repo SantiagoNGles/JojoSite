@@ -1,6 +1,6 @@
 <main>
 
-    <div class="contenue">
+    <article class="contenue">
 
         <h2 class="presentation">
             "JoJo's Bizarre Adventure" (JoJo no Kimyou na Bouken) est une série de mangas japonais écrite et

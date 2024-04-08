@@ -3,7 +3,7 @@
 function connexionPDO() {
     $login = "root";
     $mdp = "";
-    $bd = "bdJojo";
+    $bd = "jojobase";
     $serveur = "localhost";
 
     try {

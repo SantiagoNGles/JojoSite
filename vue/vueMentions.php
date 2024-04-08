@@ -1,6 +1,9 @@
 <main>
-    <article class="mention">
-        <p style="color: white">
+
+    <article class="contenue">
+
+        <h2 class="presentation" style="color: white">
+
             Identification du professionnel : <br>
             Nom : Naranjo Grajales Prénom : Santiago <br>
             Adresse mail : santiagonaranjograjales@gmail.com Numéro de téléphone : 06 ** ** ** ** <br>
@@ -23,6 +26,9 @@
             Droits de l'internaute : l’internaute a le droit de refuser la collecte, le droit d'accéder, de rectifier et <br>
             d'effacer ses données. <br>
             L’internaute a le droit d'introduire une réclamation auprès de la Cnil <br>
-        </p>
+
+        </h2>
+
     </article>
+    
 </main>

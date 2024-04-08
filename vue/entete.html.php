@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $titre ?></title>
     <style type="text/css">
             @import url("css/style.css");
@@ -24,20 +24,24 @@
 
     <nav>
 
-        <ul class="rect1">
+        <h3><a href="./?action=accueil">Revenir à l'accueil</a></h3>
 
-            <li>
-                <a href="vue/vuePersonnages.php">Personnages</a>
-            </li>
+        <div class="rect">
+        
+            <a href="./?action=personnages">
 
-        </ul>
+                <li>Personnages</li>
 
-        <ul class="rect2">
+            </a>
+
+        </div>
+
+        <ul class="rect">
             
             <?php if (isLoggedOn()) { ?>
-                <li><a href="./?action=profil" target="_blank" alt="Ce lien mène vers le profil">Mon Profil</a></li>
+                <li><a href="./?action=profil" alt="Ce lien mène vers le profil">Mon Profil</a></li>
             <?php } else { ?>
-                <li><a href="./?action=connexion" target="_blank" alt="Ce lien mène vers la page de connexion">Connexion</a></li>
+                <li><a href="./?action=connexion" alt="Ce lien mène vers la page de connexion">Connexion</a></li>
             <?php } ?>
 
         </ul>

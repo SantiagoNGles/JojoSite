@@ -28,26 +28,6 @@ img.logo {
 }
 
 /*nav by Santiago*/
-h3 a {
-    color: rgb(255, 255, 255);
-    margin-left: 10px;
-    font-size: small;
-    display: flex;
-}
-
-h3 a:hover {
-    color: rgb(255, 76, 178);
-    border-color: rgb(255, 76, 178);
-}
-
-nav {
-    text-align: center;
-    padding-top: 8px;
-    font-weight: bold;
-    background-color: #000;
-    height: 140px;
-}
-
 .rect1,
 .rect2 {
     display: inline-block;
