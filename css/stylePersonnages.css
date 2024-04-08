@@ -1,96 +1,29 @@
-* {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: rgb(58, 58, 58);
-}
-
-/*header by Yann*/
-header {
-    background-color: black;
-}
-
-hr {
-    background-color: deeppink;
-    border: 1px solid deeppink;
-    height: 4px
-}
-
-img.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 275px;
-}
-
 /*nav by Santiago*/
-.rect1,
-.rect2 {
+h3 {
+    position: absolute;
+    margin-left: 10px;
+  }
+  
+  h3 a {
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    font-size: small;
     display: inline-block;
-    margin-top: 5px;
-    border: 2px solid rgb(190, 190, 190);
-    margin: auto;
-}
-
-.rect1 li,
-.rect2 li {
-    float: left;
+    padding: 5px 10px;
+  }
+  
+  h3 a:hover {
     color: rgb(255, 76, 178);
-    width: 300px;
-    height: 50px;
-    line-height: 43px;
-    background-color: rgb(80, 80, 80);
-    cursor: default;
-    font-size: 30px;
+    border-color: rgb(255, 76, 178);
+  }
 
-}
-
-.liste {
-    transform: scale(0);
-    padding-top: 10px;
-}
-
-.liste li {
-    font-size: 14px;
-    background: rgb(60, 60, 60);
-    border: 1px solid rgb(190, 190, 190);
-}
-
-.liste a {
-    color: rgb(255, 76, 178);
-}
-
-.rect:hover {
-    border-color: deeppink;
-}
-
-.rect li:hover {
-    background: rgb(40, 40, 40);
-}
-
-.liste li:hover {
-    background: rgb(40, 40, 40);
-    border-color: deeppink;
-}
-
-.rect>li:hover .liste li {
-    transform: scale(1);
-}
-
-.rect>li:hover .liste {
-    transform: scale(1);
-}
+/*main*/
 
 .affichage {
     display: flex;
     margin-top: 100px;
     margin-left: 300px;
 }
-
 
 .imgJosuke {
     width: 650px;

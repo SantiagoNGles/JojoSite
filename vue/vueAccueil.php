@@ -17,9 +17,9 @@
 
         <div class="images">
 
-            <img src="img/joseph.jpg" alt="Image de Joseph Joestar">
-            <img src="img/jotoro.jpg" alt="Image de Jotaro Kujo">
-            <img src="img/josuke.jpg" alt="Image de Josuke Higashikata">
+            <img src="img/imgJoseph.png" alt="Image de Joseph Joestar">
+            <img src="img/jotaro.png" alt="Image de Jotaro Kujo">
+            <img src="img/imgJosuke.png" alt="Image de Josuke Higashikata">
 
         </div>
 

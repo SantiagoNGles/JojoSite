@@ -8,6 +8,7 @@
     <title><?php echo $titre ?></title>
     <style type="text/css">
             @import url("css/style.css");
+            @import url("css/stylePersonnages.css");
         </style>
 
 </head>
@@ -23,6 +24,8 @@
 
     <nav>
 
+        <h3><a href="./?action=accueil" alt="Ce bouton mène vers la page d'accueil">Revenir à l'accueil</a></h3>
+
         <div class="rect">
         
             <a href="./?action=personnages" alt="Ce lien mène vers la page des personnages">
@@ -37,7 +40,7 @@
             
             <?php if (isLoggedOn()) { ?>
 
-                <a href="./?action=profil" alt="Ce lien mène vers le profil">
+                <a href="./?action=profil" alt="Ce lien mène vers votre profil">
                     
                     <li>Mon Profil</li>
                 
