@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(58, 58, 58);
+}
+
+/*header by Yann*/
+header {
+    background-color: black;
+}
+
+hr {
+    background-color: deeppink;
+    border: 1px solid deeppink;
+    height: 4px
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 275px;
+}
+
+/*nav by Santiago*/
+h3 a {
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    font-size: small;
+    display: flex;
+}
+
+h3 a:hover {
+    color: rgb(255, 76, 178);
+    border-color: rgb(255, 76, 178);
+}
+
+nav {
+    text-align: center;
+    padding-top: 8px;
+    font-weight: bold;
+    background-color: #000;
+    height: 140px;
+}
+
+.rect1,
+.rect2 {
+    display: inline-block;
+    margin-top: 5px;
+    border: 2px solid rgb(190, 190, 190);
+    margin: auto;
+}
+
+.rect1 li,
+.rect2 li {
+    float: left;
+    color: rgb(255, 76, 178);
+    width: 300px;
+    height: 50px;
+    line-height: 43px;
+    background-color: rgb(80, 80, 80);
+    cursor: default;
+    font-size: 30px;
+
+}
+
+.liste {
+    transform: scale(0);
+    padding-top: 10px;
+}
+
+.liste li {
+    font-size: 14px;
+    background: rgb(60, 60, 60);
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.liste a {
+    color: rgb(255, 76, 178);
+}
+
+.rect:hover {
+    border-color: deeppink;
+}
+
+.rect li:hover {
+    background: rgb(40, 40, 40);
+}
+
+.liste li:hover {
+    background: rgb(40, 40, 40);
+    border-color: deeppink;
+}
+
+.rect>li:hover .liste li {
+    transform: scale(1);
+}
+
+.rect>li:hover .liste {
+    transform: scale(1);
+}
+
+.affichage {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+
+.imgJosuke {
+    width: 650px;
+    height: 900px;
+    filter: drop-shadow(0px 0px 50px rgb(255, 249, 76));
+}
+
+.txtJosuke {
+    margin-top: 150px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-weight: bold;
+    color: rgb(255, 76, 178);
+    flex: 1;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.txtJosuke a {
+    color: rgb(255, 249, 76);
+}
+
+.imgJoseph {
+    width: 650px;
+    height: 900px;
+    filter: drop-shadow(0px 0px 50px rgb(252, 76, 255));
+}
+
+.txtJoseph {
+    margin-top: 150px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-weight: bold;
+    color: rgb(255, 76, 178);
+    flex: 1;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.txtJoseph a {
+    color: rgb(255, 76, 178);
+}
+
+.imgJotaro {
+    width: 650px;
+    height: 900px;
+    filter: drop-shadow(0px 0px 50px rgb(76, 94, 255));
+}
+
+.txtJotaro {
+    margin-top: 150px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-weight: bold;
+    color: rgb(255, 76, 178);
+    flex: 1;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.txtJotaro a {
+    color: rgb(76, 219, 255);
+}

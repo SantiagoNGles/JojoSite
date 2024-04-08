@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(58, 58, 58);
+}
+
+/*header by yann*/
+header {
+  background-color: black;
+}
+
+hr {
+  background-color: deeppink;
+  border: 1px solid deeppink;
+  height: 4px
+}
+
+img.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 275px;
+}
+
+/*nav by santiago*/
+nav {
+  text-align: center;
+  padding-top: 8px;
+  font-weight: bold;
+  background-color: #000;
+  height: 90px;
+}
+
+.rect1,
+.rect2 {
+  display: inline-block;
+  border: 2px solid rgb(190, 190, 190);
+  margin-top: 10px;
+}
+
+.rect1 a,
+.rect2 a {
+  color: rgb(255, 76, 178);
+}
+
+.rect1 li,
+.rect2 li {
+  width: 300px;
+  height: 50px;
+  line-height: 43px;
+  background-color: rgb(80, 80, 80);
+  cursor: default;
+  font-size: 30px;
+}
+
+.rect1:hover,
+.rect2:hover {
+  border-color: deeppink;
+}
+
+.rect1 li:hover,
+.rect2 li:hover {
+  background: rgb(40, 40, 40);
+}
+
+/*main by imad*/
+.contenue {
+  border: 2px solid deeppink;
+  box-shadow: 0 0 30px rgba(231, 0, 181, 0.5);
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: rgb(255, 76, 178);
+}
+
+.presentation {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+div.images {
+  display: flex;
+  justify-content: space-between;
+  height: 220px;
+}
+
+footer {
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
