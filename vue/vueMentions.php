@@ -1,8 +1,8 @@
 <main>
 
-    <article class="contenue">
+    <article class="cadre">
 
-        <h2 class="presentation" style="color: white">
+        <h2 class="presentation">
 
             Identification du professionnel : <br>
             Nom : Naranjo Grajales Prénom : Santiago <br>

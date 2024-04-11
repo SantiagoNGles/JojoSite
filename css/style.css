@@ -42,7 +42,7 @@ h3 {
 }
 
 h3 a {
-  color: rgb(255, 255, 255);
+  color: white;
   border: 1px solid white;
   font-size: small;
   display: inline-block;
@@ -50,14 +50,14 @@ h3 a {
 }
 
 h3 a:hover {
-  color: rgb(255, 76, 178);
+  color: deeppink;
   border-color: rgb(255, 76, 178);
 }
 
 .rect {
-  display: inline-block;
   border: 2px solid rgb(190, 190, 190);
   cursor: default;
+  display: inline-block;
   margin-top: 10px;
 }
 
@@ -70,15 +70,15 @@ h3 a:hover {
 }
 
 .rect a:hover {
-  color: rgb(255, 76, 178);
+  color: deeppink;
 }
 
 .rect li {
   background-color: rgb(80, 80, 80);
-  line-height: 43px;
   font-size: 30px;
-  width: 300px;
+  line-height: 43px;
   height: 50px;
+  width: 300px;
 }
 
 .rect li:hover {
@@ -86,32 +86,76 @@ h3 a:hover {
 }
 
 /*main by imad*/
-.contenue {
+.cadre {
+  color: white;
   border: 2px solid deeppink;
   box-shadow: 0 0 30px rgba(231, 0, 181, 0.5);
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  color: rgb(255, 76, 178);
+  margin-top: 75px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  padding-left: 40px;  
 }
 
 .presentation {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
-div.images {
+.cadre a {
+  color: white;
+}
+
+.cadre a:hover {
+  color: deeppink;
+}
+
+.images {
   display: flex;
   justify-content: space-between;
   height: 220px;
 }
 
-footer {
+div.jonathan {
+  filter: drop-shadow(0px 0px 50px rgb(76, 255, 106));
+  display: flex;
+}
+
+div.joseph {
+  filter: drop-shadow(0px 0px 50px rgb(252, 76, 255));
+  display: flex;
+}
+
+div.jotaro {
+  filter: drop-shadow(0px 0px 50px rgb(112, 120, 164));
+  display: flex;
+}
+
+div.josuke {
+  filter: drop-shadow(0px 0px 50px rgb(0, 14, 137));
+  display: flex;
+}
+
+div.giorno {
+  filter: drop-shadow(0px 0px 50px rgb(255, 247, 0));
+  display: flex;
+}
+
+div.jolyne {
+  filter: drop-shadow(0px 0px 50px rgb(98, 255, 255));
+  display: flex;
+}
+
+footer a {
+  color:white;
+  margin-top: 100px;
   margin-left: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+footer a:hover {
+  color: deeppink;
 }
