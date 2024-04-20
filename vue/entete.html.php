@@ -37,19 +37,16 @@
             
             <?php if (isLoggedOn()) { ?>
 
-                <a href="./?action=profil" alt="Ce lien mène vers le profil">
                     
+                <a href="./?action=profil" alt="Ce lien mène vers le profil">
+
                     <li>Mon Profil</li>
-                
+            
                 </a>
 
             <?php } else { ?>
 
-                <a href="./?action=inscription" alt="Ce lien mène vers la page d'inscription">
-
-                    <li>Inscription</li>
-                
-                </a>
+                    <li><a href="./?action=connexion" alt="Ce lien mène vers la page de connexion">Connexion</a></li>
 
             <?php } ?>
 

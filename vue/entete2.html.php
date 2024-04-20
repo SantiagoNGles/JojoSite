@@ -48,9 +48,9 @@
 
             <?php } else { ?>
 
-                <a href="./?action=inscription" alt="Ce lien mène vers la page d'inscription">
+                <a href="./?action=connexion" alt="Ce lien mène vers la page de connexion">
 
-                    <li>Inscription</li>
+                    <li>Connexion</li>
                 
                 </a>
 

@@ -23,4 +23,3 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
     echo "connexionPDO() : \n";
     print_r(connexionPDO());
 }
-?>

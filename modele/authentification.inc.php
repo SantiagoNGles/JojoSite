@@ -2,18 +2,18 @@
 
 include_once "bd.utilisateur.inc.php";
 
-function login($mailU, $mdpU) {
+function login($email, $mdp) {
     if (!isset($_SESSION)) {
         session_start();
     }
 
-    $util = getUtilisateurByMailU($mailU);
-    $mdpBD = $util["mdpU"];
+    $util = getUtilisateurByMailU($email);
+    $mdpBD = $util["mdp"];
 
-    if (trim($mdpBD) == trim(crypt($mdpU, $mdpBD))) {
+    if (trim($mdpBD) == trim(crypt($mdp, $mdpBD))) {
         // le mot de passe est celui de l'utilisateur dans la base de donnees
-        $_SESSION["mailU"] = $mailU;
-        $_SESSION["mdpU"] = $mdpBD;
+        $_SESSION["email"] = $email;
+        $_SESSION["mdp"] = $mdpBD;
     }
 }
 
@@ -21,13 +21,13 @@ function logout() {
     if (!isset($_SESSION)) {
         session_start();
     }
-    unset($_SESSION["mailU"]);
-    unset($_SESSION["mdpU"]);
+    unset($_SESSION["email"]);
+    unset($_SESSION["mdp"]);
 }
 
 function getMailULoggedOn(){
     if (isLoggedOn()){
-        $ret = $_SESSION["mailU"];
+        $ret = $_SESSION["email"];
     }
     else {
         $ret = "";
@@ -42,9 +42,9 @@ function isLoggedOn() {
     }
     $ret = false;
 
-    if (isset($_SESSION["mailU"])) {
-        $util = getUtilisateurByMailU($_SESSION["mailU"]);
-        if ($util["mailU"] == $_SESSION["mailU"] && $util["mdpU"] == $_SESSION["mdpU"]
+    if (isset($_SESSION["email"])) {
+        $util = getUtilisateurByMailU($_SESSION["email"]);
+        if ($util["email"] == $_SESSION["email"] && $util["mdp"] == $_SESSION["mdp"]
         ) {
             $ret = true;
         }
@@ -68,4 +68,3 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
     // deconnexion
     logout();
 }
-?>

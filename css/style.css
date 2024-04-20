@@ -160,6 +160,10 @@ div.jolyne {
   text-align: center;
 }
 
+.container input {
+  width: 410px;
+}
+
 /*css du pied*/
 footer a {
   color:white;

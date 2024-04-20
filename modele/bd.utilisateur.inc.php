@@ -18,13 +18,13 @@ function getUtilisateurs() {
     return $resultat;
 }
 
-function getUtilisateurByMailU($mailU) {
+function getUtilisateurByMailU($email) {
     $resultat = array();
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from utilisateur where mailU=:mailU");
-        $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
+        $req = $cnx->prepare("select * from utilisateur where email=:email");
+        $req->bindValue(':email', $email, PDO::PARAM_STR);
         $req->execute();
         
         $resultat = $req->fetch(PDO::FETCH_ASSOC);
@@ -35,15 +35,15 @@ function getUtilisateurByMailU($mailU) {
     return $resultat;
 }
 
-function addUtilisateur($mailU, $mdpU, $pseudoU) {
+function addUtilisateur($email, $mdp, $pseudo) {
     try {
         $cnx = connexionPDO();
 
-        $mdpUCrypt = crypt($mdpU, "sel");
-        $req = $cnx->prepare("insert into utilisateur (mailU, mdpU, pseudoU) values(:mailU,:mdpU,:pseudoU)");
-        $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
-        $req->bindValue(':mdpU', $mdpUCrypt, PDO::PARAM_STR);
-        $req->bindValue(':pseudoU', $pseudoU, PDO::PARAM_STR);
+        $mdpCrypt = crypt($mdp, "sel");
+        $req = $cnx->prepare("insert into utilisateur (email, mdp, pseudo) values(:email,:mdp,:pseudo)");
+        $req->bindValue(':email', $email, PDO::PARAM_STR);
+        $req->bindValue(':mdp', $mdpCrypt, PDO::PARAM_STR);
+        $req->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
         
         $resultat = $req->execute();
     } catch (PDOException $e) {
@@ -53,15 +53,15 @@ function addUtilisateur($mailU, $mdpU, $pseudoU) {
     return $resultat;
 }
 
-function updtMdpUtilisateur($mailU, $mdpU) {
+function updtMdpUtilisateur($email, $mdp) {
     $resultat = -1;
     try {
         $cnx = connexionPDO();
 
-        $mdpUCrypt = crypt($mdpU, "sel");
-        $req = $cnx->prepare("update utilisateur set mdpU=:mdpU where mailU=:mailU");
-        $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
-        $req->bindValue(':mdpU', $mdpUCrypt, PDO::PARAM_STR);
+        $mdpCrypt = crypt($mdp, "sel");
+        $req = $cnx->prepare("update utilisateur set mdp=:mdp where email=:email");
+        $req->bindValue(':email', $email, PDO::PARAM_STR);
+        $req->bindValue(':mdp', $mdpCrypt, PDO::PARAM_STR);
 
         $resultat = $req->execute();
     } catch (PDOException $e) {
@@ -71,14 +71,14 @@ function updtMdpUtilisateur($mailU, $mdpU) {
     return $resultat;
 }
 
-function updtPseudoUtilisateur($mailU, $pseudoU) {
+function updtPseudoUtilisateur($email, $pseudo) {
     $resultat = -1;
     try {
         $cnx = connexionPDO();
 
-        $req = $cnx->prepare("update utilisateur set pseudoU=:pseudoU where mailU=:mailU");
-        $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
-        $req->bindValue(':pseudoU', $pseudoU, PDO::PARAM_STR);
+        $req = $cnx->prepare("update utilisateur set pseudo=:pseudo where email=:email");
+        $req->bindValue(':email', $email, PDO::PARAM_STR);
+        $req->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
 
         $resultat = $req->execute();
     } catch (PDOException $e) {

@@ -4,7 +4,9 @@ function controleurPrincipal($action){
     $lesActions = array();
     $lesActions["defaut"] = "accueil.php";
     $lesActions["personnages"] = "personnages.php";
+    $lesActions["connexion"] = "connexion.php";
     $lesActions["inscription"] = "inscription.php";
+    $lesActions["profil"] = "monProfil.php";
     $lesActions["mentions"] = "mentions.php";
 
     
