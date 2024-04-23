@@ -101,4 +101,3 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
     echo "addUtilisateur(\"mathieu.capliez3@gmail.com\") : \n";
     addUtilisateur("mathieu.capliez3@gmail.com", "Passe1?", "mat");
 }
-?>

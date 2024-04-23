@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $titre ?></title>
     <style type="text/css">
-            @import url("css/style.css");
-            @import url("css/stylePersonnages.css");
-        </style>
+        @import url("css/style.css");
+    </style>
 
 </head>
 
@@ -27,7 +26,7 @@
         <h3><a href="./?action=accueil" alt="Ce bouton mène vers la page d'accueil">Revenir à l'accueil</a></h3>
 
         <div class="rect">
-        
+
             <a href="./?action=personnages" alt="Ce lien mène vers la page des personnages">
 
                 <li>Personnages</li>
@@ -37,13 +36,13 @@
         </div>
 
         <div class="rect">
-            
+
             <?php if (isLoggedOn()) { ?>
 
                 <a href="./?action=profil" alt="Ce lien mène vers votre profil">
-                    
+
                     <li>Mon Profil</li>
-                
+
                 </a>
 
             <?php } else { ?>
@@ -51,7 +50,7 @@
                 <a href="./?action=connexion" alt="Ce lien mène vers la page de connexion">
 
                     <li>Connexion</li>
-                
+
                 </a>
 
             <?php } ?>

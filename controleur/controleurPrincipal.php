@@ -7,6 +7,10 @@ function controleurPrincipal($action){
     $lesActions["connexion"] = "connexion.php";
     $lesActions["inscription"] = "inscription.php";
     $lesActions["profil"] = "monProfil.php";
+    $lesActions["deconnexion"] = "deconnexion.php";
+    $lesActions["ajouterPersonnage"] = "ajouterPersonnage.php";
+    $lesActions["supprimerPersonnage"] = "supprimerPersonnage.php";
+    $lesActions["modifierPersonnage"] = "modifierPersonnage.php";
     $lesActions["mentions"] = "mentions.php";
 
     

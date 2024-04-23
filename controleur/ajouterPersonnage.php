@@ -11,10 +11,9 @@ if ($_GET['action'] == 'ajouterPersonnage') {
         if ($_POST["prenom"] != "" && $_POST["nom"] != "") {
             $prenom = $_POST['prenom'];
             $nom = $_POST['nom'];
-            // Appeler la fonction pour ajouter un personnage avec les valeurs récupérées
+            
             ajouterPersonnage($prenom, $nom);
 
-            // Rediriger l'utilisateur vers la page des personnages
             header('Location: ./?action=personnages');
             exit();
         }

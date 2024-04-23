@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $titre ?></title>
     <style type="text/css">
-            @import url("css/style.css");
-        </style>
+        @import url("css/style.css");
+    </style>
 
 </head>
 
@@ -24,7 +24,7 @@
     <nav>
 
         <div class="rect">
-        
+
             <a href="./?action=personnages" alt="Ce lien mène vers la page des personnages">
 
                 <li>Personnages</li>
@@ -34,19 +34,23 @@
         </div>
 
         <div class="rect">
-            
+
             <?php if (isLoggedOn()) { ?>
 
-                    
+
                 <a href="./?action=profil" alt="Ce lien mène vers le profil">
 
                     <li>Mon Profil</li>
-            
+
                 </a>
 
             <?php } else { ?>
 
-                    <li><a href="./?action=connexion" alt="Ce lien mène vers la page de connexion">Connexion</a></li>
+                <a href="./?action=connexion" alt="Ce lien mène vers la page de connexion">
+
+                    <li>Connexion</li>
+
+                </a>
 
             <?php } ?>
 

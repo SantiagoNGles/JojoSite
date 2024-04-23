@@ -1,3 +1,9 @@
+DROP TABLE IF EXISTS figurer;
+DROP TABLE IF EXISTS partie;
+DROP TABLE IF EXISTS personnage;
+DROP TABLE IF EXISTS utilisateur;
+DROP TABLE IF EXISTS saison;
+
 CREATE TABLE saison(
    idSaison INT PRIMARY KEY,
    dureeEp INT NOT NULL
@@ -11,9 +17,10 @@ CREATE TABLE utilisateur(
 );
 
 CREATE TABLE personnage(
-   idPerso INT PRIMARY KEY,
-   nomPerso VARCHAR(50) NOT NULL UNIQUE,
-   email VARCHAR(50) NOT NULL,
+   idPerso INT PRIMARY KEY AUTO_INCREMENT,
+   prenomPerso VARCHAR(50) NOT NULL,
+   nomPerso VARCHAR(50) NOT NULL,
+   email VARCHAR(50),
    FOREIGN KEY(email) REFERENCES utilisateur(email)
 );
 
@@ -41,10 +48,10 @@ CREATE TABLE figurer(
 -- (4, 39),
 -- (5, 38);
 
--- INSERT INTO personnage
--- VALUES(2, "Joseph Joestar", NULL),
--- (3, "Jotaro Kujo", NULL),
--- (4, "Josuke Higashikata", NULL);
+INSERT INTO personnage (prenomPerso, nomPerso, email) 
+VALUES ("Joseph", "Joestar", NULL),
+       ("Jotaro", "Kujo", NULL),
+       ("Josuke", "Higashikata", NULL);
 
 -- INSERT INTO partie
 -- VALUES (1, 45, 1)

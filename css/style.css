@@ -29,7 +29,7 @@ img.logo {
 
 /*nav by Santiago*/
 nav {
-  background-color: #000;
+  background-color: black;
   font-weight: bold;
   text-align: center;
   padding-top: 8px;
@@ -88,15 +88,15 @@ h3 a:hover {
 /*main by imad*/
 .cadre {
   color: white;
-  background-color: rgb(45, 45, 45);;
+  background-color: rgb(45, 45, 45);
   border: 2px solid rgb(255, 255, 255);
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
   border-radius: 8px;
-  margin: 100px auto;
+  margin-top: 100px;
   margin-left: 200px;
   margin-right: 200px;
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   padding-right: 40px;
   padding-left: 40px;
 }
@@ -165,11 +165,14 @@ div.jolyne {
 }
 
 /*css du pied*/
-footer a {
-  color:white;
-  margin-top: 100px;
+footer {
+  margin-top: 30px;
   margin-left: 10px;
   padding-bottom: 20px;
+}
+
+footer a {
+  color:white;
 }
 
 footer a:hover {

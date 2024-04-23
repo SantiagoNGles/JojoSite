@@ -1,38 +1,61 @@
 <main>
-    <article class="affichage">
-        <div class="imgJoseph">
-            <img src="img/imgJoseph.png" alt="Image de Joseph Joestar" />
+
+    <article class="cadre">
+
+        <h1 id="titre">Création de personnages</h1>
+        <div class="container">
+
+            <div class="box1">
+
+                <h2>Les personnages</h2>
+
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Prénom</th>
+                        <th>Nom</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($personnages as $personnage): ?>
+                        <tr>
+                            <td><?php echo $personnage['idPerso']; ?></td>
+                            <td><?php echo $personnage['prenomPerso']; ?></td>
+                            <td><?php echo $personnage['nomPerso']; ?></td>
+                            <td>
+                                <form action="./?action=modifierPersonnage" method="post">
+                                    <input type="hidden" name="id" value="<?php echo $personnage['idPerso']; ?>">
+                                    <label for="prenom">Nouveau prénom:</label>
+                                    <input type="text" id="prenom" name="prenom" value="<?php echo $personnage['prenomPerso']; ?>">
+                                    <label for="nom">Nouveau nom:</label>
+                                    <input type="text" id="nom" name="nom" value="<?php echo $personnage['nomPerso']; ?>">
+                                    <input type="submit" value="Modifier">
+                                </form>
+                                <form action="./?action=supprimerPersonnage" method="post">
+                                    <input type="hidden" name="id" value="<?php echo $personnage['idPerso']; ?>">
+                                    <input type="submit" value="Supprimer">
+                                </form>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+
+            <form action="./?action=ajouterPersonnage" method="post">
+
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom">
+                <input type="submit" value="Ajouter">
+
+            </form>
+
         </div>
 
-        <p class="txtJoseph">
-            La partie de Joseph Joestar dans "JoJo's Bizarre Adventure" est introduite dans la deuxième partie de la
-            série, intitulée "Battle Tendency".
-
-            Joseph Joestar est le petit-fils de Jonathan Joestar, le protagoniste de la première partie de la série.
-            Contrairement à son grand-père, Joseph est un personnage plus espiègle et impertinent, mais tout aussi
-            déterminé à combattre le mal. Il possède également un Stand, nommé "Hermit Purple", bien qu'à l'époque
-            de "Battle Tendency", le concept de Stand n'ait pas encore été introduit.
-
-            L'histoire de Joseph dans "Battle Tendency" se concentre sur sa lutte contre les Pilliers, des êtres
-            ancestraux puissants et immortels. Joseph doit affronter des adversaires redoutables tels que Santana,
-            Wamuu, Esidisi et Kars, qui menacent l'humanité avec leurs plans diaboliques.
-
-            Joseph se distingue par son intelligence rusée et sa capacité à improviser lors des combats. Il utilise
-            souvent des stratagèmes ingénieux pour surmonter des situations apparemment impossibles. Sa personnalité
-            enjouée et son esprit vif ajoutent une touche d'humour à la série, même dans les moments les plus
-            sombres.
-
-            Au fil de "Battle Tendency", Joseph forge des alliances avec des personnages comme Caesar Zeppeli et
-            Lisa Lisa, et développe un lien étroit avec eux. Sa relation avec Caesar, en particulier, est marquée
-            par une rivalité amicale et finalement une profonde camaraderie.
-
-            La partie "Battle Tendency" est connue pour son action effrénée, ses combats épiques et son intrigue
-            pleine de rebondissements. Joseph y brille en tant que protagoniste charismatique et astucieux, laissant
-            une empreinte indélébile sur l'univers de "JoJo's Bizarre Adventure".. Pour plus d'informations sur le
-            personnage et la partie
-            2, nous vous invitons à jeter un coup d'oeil sur la page
-            <a href="https://jjba.fandom.com/fr/wiki/Joseph_Joestar" target="_blank">wiki</a> du personnage et à lire
-            ou regarder la partie 2.
-        </p>
     </article>
+
 </main>
