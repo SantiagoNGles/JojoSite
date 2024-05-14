@@ -32,7 +32,7 @@ CREATE TABLE partie(
 );
 
 CREATE TABLE figurer(
-   idPerso INT ,
+   idPerso INT AUTO_INCREMENT,
    idPartie INT,
    persoPrinc BOOLEAN NOT NULL,
    datePartie DATE NOT NULL,
@@ -41,27 +41,22 @@ CREATE TABLE figurer(
    FOREIGN KEY(idPartie) REFERENCES partie(idPartie)
 );
 
--- INSERT INTO saison
--- VALUES(1, 26),
--- (2, 48),
--- (3, 39),
--- (4, 39),
--- (5, 38);
+INSERT INTO saison
+VALUES (1, 48),
+(2, 39),
+(3, 39);
 
 INSERT INTO personnage (prenomPerso, nomPerso, email) 
 VALUES ("Joseph", "Joestar", NULL),
        ("Jotaro", "Kujo", NULL),
        ("Josuke", "Higashikata", NULL);
 
--- INSERT INTO partie
--- VALUES (1, 45, 1)
--- (2, 68, 1),
--- (3, 151, 2),
--- (4, 173, 3),
--- (5, 154, 4),
--- (6, 152, 5);
+INSERT INTO partie
+VALUES (2, 68, 1),
+(3, 151, 2),
+(4, 173, 3);
 
--- INSERT INTO
--- VALUES (2, 2, TRUE, "07-12-2012"),
--- (3, 3, TRUE, "04-04-2014"),
--- (4, 4, TRUE, "01-04-2016");
+INSERT INTO figurer (idPartie, persoPrinc, datePartie)
+VALUES (2, TRUE, "2012-12-07"),
+(3, TRUE, "2014-04-04"),
+(4, TRUE, "2016-04-01");

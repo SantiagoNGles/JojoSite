@@ -17,6 +17,7 @@
                         <th>Id</th>
                         <th>Prénom</th>
                         <th>Nom</th>
+                        <th>Partie</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,6 +26,7 @@
                             <td><?php echo $personnage['idPerso']; ?></td>
                             <td><?php echo $personnage['prenomPerso']; ?></td>
                             <td><?php echo $personnage['nomPerso']; ?></td>
+                            <td><?php echo $personnage['idPartie']; ?></td>
                             <td>
                                 <form action="./?action=modifierPersonnage" method="post">
                                     <input type="hidden" name="id" value="<?php echo $personnage['idPerso']; ?>">
@@ -50,6 +52,17 @@
                 <input type="text" id="prenom" name="prenom">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom">
+
+                <label for="idPartie">Id Partie:</label>
+                <select id="idPartie" name="idPartie">
+                    <option value="1">Partie 1</option>
+                    <option value="2">Partie 2</option>
+                    <option value="3">Partie 3</option>
+                    <option value="3">Partie 4</option>
+                    <option value="3">Partie 5</option>
+                    <option value="3">Partie 6</option>
+                </select>
+                
                 <input type="submit" value="Ajouter">
 
             </form>

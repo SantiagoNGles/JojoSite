@@ -8,11 +8,14 @@ include_once "$racine/modele/bd.personnages.php";
 
 if ($_GET['action'] == 'ajouterPersonnage') {
 
-        if ($_POST["prenom"] != "" && $_POST["nom"] != "") {
+        if ($_POST["prenom"] != "" && $_POST["nom"] != "" && $_POST["idPartie"]) {
             $prenom = $_POST['prenom'];
             $nom = $_POST['nom'];
+            $idPartie = $_POST['idPartie'];
+
+            $idPerso = ajouterPersonnage($prenom, $nom);
             
-            ajouterPersonnage($prenom, $nom);
+            ajouterDansFigurer($idPerso, $idPartie);
 
             header('Location: ./?action=personnages');
             exit();
