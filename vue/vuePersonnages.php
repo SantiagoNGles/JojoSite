@@ -58,9 +58,9 @@
                     <option value="1">Partie 1</option>
                     <option value="2">Partie 2</option>
                     <option value="3">Partie 3</option>
-                    <option value="3">Partie 4</option>
-                    <option value="3">Partie 5</option>
-                    <option value="3">Partie 6</option>
+                    <option value="4">Partie 4</option>
+                    <option value="5">Partie 5</option>
+                    <option value="6">Partie 6</option>
                 </select>
                 
                 <input type="submit" value="Ajouter">

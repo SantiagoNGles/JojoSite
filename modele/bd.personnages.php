@@ -27,7 +27,7 @@ function ajouterDansFigurer($idPerso, $idPartie) {
 
 function getAllPersonnages() {
     $conn = connexionPDO();
-    $sql = "SELECT p.*, f.idPartie FROM personnage p INNER JOIN figurer f ON p.idPerso = f.idPerso";
+    $sql = "SELECT p.*, f.idPartie FROM personnage p INNER JOIN figurer f ON p.idPerso = f.idPerso ORDER BY idPerso ASC";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $personnages = $stmt->fetchAll(PDO::FETCH_ASSOC);
