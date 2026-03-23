@@ -16,14 +16,14 @@
 
     <header>
 
-        <img src="img/jojo.jpg" class="logo" alt="Logo de Jojo's Bizarre Adventure">
+        <img src="img/jojo.jpg" class="logo" alt="Logo de Jojo"s Bizarre Adventure">
         <hr>
 
     </header>
 
     <nav>
 
-        <h3><a href="./?action=accueil" alt="Ce bouton mène vers la page d'accueil">Revenir à l'accueil</a></h3>
+        <h3><a href="./?action=accueil" alt="Ce bouton mène vers la page d"accueil">Revenir à l"accueil</a></h3>
 
         <div class="rect">
 

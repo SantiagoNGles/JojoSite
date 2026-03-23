@@ -16,7 +16,7 @@
 
     <header>
 
-        <img src="img/jojo.jpg" class="logo" alt="Logo de Jojo's Bizarre Adventure">
+        <img src="img/jojo.jpg" class="logo" alt="Logo de Jojo"s Bizarre Adventure">
         <hr>
 
     </header>

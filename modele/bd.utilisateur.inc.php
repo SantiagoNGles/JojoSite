@@ -24,7 +24,7 @@ function getUtilisateurByMailU($email) {
     try {
         $cnx = connexionPDO();
         $req = $cnx->prepare("select * from utilisateur where email=:email");
-        $req->bindValue(':email', $email, PDO::PARAM_STR);
+        $req->bindValue(":email", $email, PDO::PARAM_STR);
         $req->execute();
         
         $resultat = $req->fetch(PDO::FETCH_ASSOC);
@@ -41,9 +41,9 @@ function addUtilisateur($email, $mdp, $pseudo) {
 
         $mdpCrypt = crypt($mdp, "sel");
         $req = $cnx->prepare("insert into utilisateur (email, mdp, pseudo) values(:email,:mdp,:pseudo)");
-        $req->bindValue(':email', $email, PDO::PARAM_STR);
-        $req->bindValue(':mdp', $mdpCrypt, PDO::PARAM_STR);
-        $req->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
+        $req->bindValue(":email", $email, PDO::PARAM_STR);
+        $req->bindValue(":mdp", $mdpCrypt, PDO::PARAM_STR);
+        $req->bindValue(":pseudo", $pseudo, PDO::PARAM_STR);
         
         $resultat = $req->execute();
     } catch (PDOException $e) {
@@ -60,8 +60,8 @@ function updtMdpUtilisateur($email, $mdp) {
 
         $mdpCrypt = crypt($mdp, "sel");
         $req = $cnx->prepare("update utilisateur set mdp=:mdp where email=:email");
-        $req->bindValue(':email', $email, PDO::PARAM_STR);
-        $req->bindValue(':mdp', $mdpCrypt, PDO::PARAM_STR);
+        $req->bindValue(":email", $email, PDO::PARAM_STR);
+        $req->bindValue(":mdp", $mdpCrypt, PDO::PARAM_STR);
 
         $resultat = $req->execute();
     } catch (PDOException $e) {
@@ -77,8 +77,8 @@ function updtPseudoUtilisateur($email, $pseudo) {
         $cnx = connexionPDO();
 
         $req = $cnx->prepare("update utilisateur set pseudo=:pseudo where email=:email");
-        $req->bindValue(':email', $email, PDO::PARAM_STR);
-        $req->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
+        $req->bindValue(":email", $email, PDO::PARAM_STR);
+        $req->bindValue(":pseudo", $pseudo, PDO::PARAM_STR);
 
         $resultat = $req->execute();
     } catch (PDOException $e) {
@@ -90,7 +90,7 @@ function updtPseudoUtilisateur($email, $pseudo) {
 
 if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
     // prog principal de test
-    header('Content-Type:text/plain');
+    header("Content-Type:text/plain");
 
     echo "getUtilisateurs() : \n";
     print_r(getUtilisateurs());

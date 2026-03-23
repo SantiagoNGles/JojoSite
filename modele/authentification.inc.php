@@ -11,7 +11,7 @@ function login($email, $mdp) {
     $mdpBD = $util["mdp"];
 
     if (trim($mdpBD) == trim(crypt($mdp, $mdpBD))) {
-        // le mot de passe est celui de l'utilisateur dans la base de donnees
+        // le mot de passe est celui de l"utilisateur dans la base de donnees
         $_SESSION["email"] = $email;
         $_SESSION["mdp"] = $mdpBD;
     }
@@ -54,7 +54,7 @@ function isLoggedOn() {
 
 if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
     // prog principal de test
-    header('Content-Type:text/plain');
+    header("Content-Type:text/plain");
 
 
     // test de connexion

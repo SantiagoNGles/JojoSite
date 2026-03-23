@@ -17,7 +17,7 @@ header {
 hr {
   background-color: deeppink;
   border: 1px solid deeppink;
-  height: 4px
+  height: 4px;
 }
 
 img.logo {
@@ -172,7 +172,7 @@ footer {
 }
 
 footer a {
-  color:white;
+  color: white;
 }
 
 footer a:hover {
