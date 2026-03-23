@@ -15,7 +15,7 @@
                 <input type="text" name="pseudo" placeholder="Entrez un pseudo" required>
                 <br>
                 
-                <input type="password" name="mdp" placeholder="Entrez un mot de passe en accord aux recommendations de l"ANSSI" required>
+                <input type="password" name="mdp" placeholder="Entrez un mot de passe en accord aux recommendations de l'ANSSI" required>
                 <br>
 
                 <button id="sauvegarder" type="submit">S"inscrire</button>
