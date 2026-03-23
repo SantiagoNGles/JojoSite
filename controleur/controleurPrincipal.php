@@ -12,6 +12,7 @@ function controleurPrincipal($action){
     $lesActions["supprimerPersonnage"] = "supprimerPersonnage.php";
     $lesActions["modifierPersonnage"] = "modifierPersonnage.php";
     $lesActions["mentions"] = "mentions.php";
+    $lesActions["valider"] = "validerMDP.php";
 
     
     if (array_key_exists ( $action , $lesActions )){

@@ -14,7 +14,6 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Id</th>
                         <th>Prénom</th>
                         <th>Nom</th>
                         <th>Partie</th>
@@ -24,23 +23,21 @@
                     <?php foreach ($personnages as $personnage): ?>
                         <tr>
                             
-                            <td><?php echo $personnage['idPerso']; ?></td>
-                            <td><?php echo $personnage['prenomPerso']; ?></td>
-                            <td><?php echo $personnage['nomPerso']; ?></td>
-                            <td><?php echo $personnage['idPartie']; ?></td>
+                            <td><?php echo $personnage["prenomPerso"]; ?></td>
+                            <td><?php echo $personnage["nomPerso"]; ?></td>
+                            <td><?php echo $personnage["idPartie"]; ?></td>
 
                             <?php if (isLoggedOn()): ?>
                                 <td>
                                     <form action="./?action=modifierPersonnage" method="post">
-                                        <input type="hidden" name="id" value="<?php echo $personnage['idPerso']; ?>">
                                         <label for="prenom">Nouveau prénom:</label>
-                                        <input type="text" id="prenom" name="prenom" value="<?php echo $personnage['prenomPerso']; ?>">
+                                        <input type="text" id="prenom" name="prenom" value="<?php echo $personnage["prenomPerso"]; ?>">
                                         <label for="nom">Nouveau nom:</label>
-                                        <input type="text" id="nom" name="nom" value="<?php echo $personnage['nomPerso']; ?>">
+                                        <input type="text" id="nom" name="nom" value="<?php echo $personnage["nomPerso"]; ?>">
                                         <input type="submit" value="Modifier">
                                     </form>
                                     <form action="./?action=supprimerPersonnage" method="post">
-                                        <input type="hidden" name="id" value="<?php echo $personnage['idPerso']; ?>">
+                                        <input type="hidden" name="id" value="<?php echo $personnage["idPerso"]; ?>">
                                         <input type="submit" value="Supprimer">
                                     </form>
                                 </td>

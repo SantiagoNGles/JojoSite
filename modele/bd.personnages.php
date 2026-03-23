@@ -71,8 +71,8 @@ function modifierPersonnage($id, $nouveauPrenom, $nouveauNom) {
     $conn = connexionPDO();
     $sql = "UPDATE personnage SET prenomPerso = :prenom, nomPerso = :nom WHERE idPerso = :id";
     $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':prenom', $nouveauPrenom);
-    $stmt->bindParam(':nom', $nouveauNom);
-    $stmt->bindParam(':id', $id);
+    $stmt->bindParam(":prenom", $nouveauPrenom);
+    $stmt->bindParam(":nom", $nouveauNom);
+    $stmt->bindParam(":id", $id);
     $stmt->execute();
 }
